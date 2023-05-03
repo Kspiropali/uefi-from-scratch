@@ -1,0 +1,31 @@
+[package]
+name = "uefi-from-scratch"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+debug = false
+overflow-checks = false
+strip = "none"
+debug-assertions = false
+lto = "fat"
+panic = "abort"
+incremental = false
+codegen-units = 1
+rpath = false
+
+
+[profile.dev]
+opt-level = 0
+debug = true
+overflow-checks = true
+strip = "none"
+debug-assertions = true
+lto = "fat"
+panic = "abort"
+incremental = false
+codegen-units = 1
+rpath = false
