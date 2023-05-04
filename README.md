@@ -6,7 +6,7 @@ uefi-from-scratch is a personal rust project to learn about UEFI and how to use 
 
 #### To find pre-compiled binaries, please visit [releases](https://github.com/Kspiropali/uefi-from-scratch/releases)
 
-#Cross-Compiling(Experimental)
+# Cross-Compiling(Experimental)
 #### There is support for cross-compiling the project against aarch64-unknown-linux-gnu and i686-unknown-linux-gnu targets in addition to the default.
 ### For both targets, the following pre-requisites are required:
 - Get the necessary qemu firmware files for the respective targets
