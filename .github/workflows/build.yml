@@ -4,7 +4,7 @@ run-name: Build
 on: [ push, workflow_dispatch ]
 
 jobs:
-  build:
+  build_x64:
     runs-on: ubuntu-latest
 
     steps:
@@ -29,3 +29,6 @@ jobs:
             target/x86_64-unknown-uefi/release/bootx64.efi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  build_arm:
+    runs-on:
