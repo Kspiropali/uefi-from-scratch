@@ -1,4 +1,4 @@
-# uefi-from-scratch
+# uefi-from-scratch ![Build](https://github.com/Kspiropali/uefi-from-scratch/actions/workflows/build.yml/badge.svg)
 
 uefi-from-scratch is a personal rust project to learn about UEFI and how to use it to boot a semi OS.
 
