@@ -1,7 +1,7 @@
 name: Github actions for rust cross compile
 run-name: Build
 
-on: [push, workflow_dispatch]
+on: [ push, workflow_dispatch ]
 
 jobs:
   build:
@@ -19,7 +19,7 @@ jobs:
           override: true
 
       - name: Build
-        run: cargo build --release --target aarch64-unknown-uefi && mv target/x86_64-unknown-uefi/release/uefi-from-scratch.efi target/x86_64-unknown-uefi/release/bootx64.efi
+        run: cargo build --release --target x86_64-unknown-uefi && mv target/x86_64-unknown-uefi/release/uefi-from-scratch.efi target/x86_64-unknown-uefi/release/bootx64.efi
 
       - name: Release
         uses: softprops/action-gh-release@v1
