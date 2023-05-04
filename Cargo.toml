@@ -2,16 +2,26 @@
 name = "uefi-from-scratch"
 version = "0.1.0"
 edition = "2021"
+readme = "README.md"
+authors = ["Kristian Spiropali @kspiropali@hotmail.com"]
+description = "A simple UEFI application written in Rust"
+license = "MIT"
+repository = "https://github.com/Kspiropali/uefi-from-scratch"
+homepage = "https://uefi.org/"
+documentation = "https://uefi.org/sites/default/files/resources/ACPI_Spec_6_5_Aug29.pdf"
+keywords = ["uefi", "rust", "bootloader"]
+categories = ["embedded", "bootloader"]
 
 [dependencies]
+#none for now
 
 [profile.release]
 opt-level = 3
 debug = false
 overflow-checks = false
-strip = "none"
+strip = true
 debug-assertions = false
-lto = "fat"
+lto = true
 panic = "abort"
 incremental = false
 codegen-units = 1

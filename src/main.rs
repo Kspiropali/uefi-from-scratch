@@ -2,11 +2,12 @@
 #![no_std]
 #![warn(dead_code)]
 
-use snake::{EFI_HANDLE, EFI_STATUS, EFI_SYSTEM_TABLE};
-use snake::r#enum::EFI_SUCCESS;
+use uefi_from_scratch::{EFI_HANDLE, EFI_STATUS, EFI_SYSTEM_TABLE};
+use uefi_from_scratch::r#enum::EFI_SUCCESS;
 
 #[panic_handler]
 #[no_mangle]
+#[cfg(not(test))]
 fn panic(_info: &core::panic::PanicInfo) -> ! {
     loop {}
 }

@@ -1,0 +1,19 @@
+[build]
+rustflags = ["-C", "target-cpu=native"]
+
+[doc]
+browser = "chromium"
+
+[env]
+## for future reference
+
+[future-incompat-report]
+frequency = 'always'
+
+[net]
+offline = true
+
+[term]
+color = "never"
+quiet = true
+verbose = false
