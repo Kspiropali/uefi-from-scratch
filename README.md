@@ -44,7 +44,7 @@ just debug
 │   ├── main.rs
 │   ├── enum.rs
 ├── target/
-├── .github/
+├── ..github/
 ├── ACPI_Spec_6_5_Aug29.pdf
 ├── Cargo.lock
 ├── Cargo.toml
