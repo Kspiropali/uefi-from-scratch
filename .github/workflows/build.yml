@@ -23,7 +23,6 @@ jobs:
 
       - name: Release
         uses: softprops/action-gh-release@v1
-        if: startsWith('*')
         with:
           files: |
             target/x86_64-unknown-uefi/release/bootx64.efi
