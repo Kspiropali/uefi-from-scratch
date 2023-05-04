@@ -1,1 +1,1 @@
-cargo build --release --target x86_64-unknown-uefi
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && cargo build --release --target x86_64-unknown-uefi
