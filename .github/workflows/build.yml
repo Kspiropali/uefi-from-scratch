@@ -1,6 +1,8 @@
 name: Github actions for rust cross compile
 run-name: Build
-on: [push]
+
+
+on: [push, workflow_dispatch]
 jobs:
   generate:
     name: Create release-artifacts
