@@ -1,5 +1,5 @@
 use crate::EFI_STATUS;
-
+// EFI_STATUS values
 pub const EFI_SUCCESS: EFI_STATUS = 0;
 pub const EFI_LOAD_ERROR: EFI_STATUS = 1;
 pub const EFI_INVALID_PARAMETER: EFI_STATUS = 2;
@@ -34,3 +34,31 @@ pub const EFI_INVALID_LANGUAGE: EFI_STATUS = 32;
 pub const EFI_COMPROMISED_DATA: EFI_STATUS = 33;
 pub const EFI_IP_ADDRESS_CONFLICT: EFI_STATUS = 34;
 pub const EFI_HTTP_ERROR: EFI_STATUS = 35;
+
+// EFI_GRAPHICS_OUTPUT_PROTOCOL color definitions
+pub const EFI_BLACK: u8 = 0x00;
+pub const EFI_BLUE: u8 = 0x01;
+pub const EFI_GREEN: u8 = 0x02;
+pub const EFI_CYAN: u8 = 0x03;
+pub const EFI_RED: u8 = 0x04;
+pub const EFI_MAGENTA: u8 = 0x05;
+pub const EFI_BROWN: u8 = 0x06;
+pub const EFI_LIGHTGRAY: u8 = 0x07;
+pub const EFI_DARKGRAY: u8 = 0x08;
+pub const EFI_LIGHTBLUE: u8 = 0x09;
+pub const EFI_LIGHTGREEN: u8 = 0x0A;
+pub const EFI_LIGHTCYAN: u8 = 0x0B;
+pub const EFI_LIGHTRED: u8 = 0x0C;
+pub const EFI_LIGHTMAGENTA: u8 = 0x0D;
+pub const EFI_YELLOW: u8 = 0x0E;
+pub const EFI_WHITE: u8 = 0x0F;
+
+// EFI_GRAPHICS_OUTPUT_PROTOCOL background color definitions
+pub const EFI_BACKGROUND_BLACK: u8 = 0x00;
+pub const EFI_BACKGROUND_BLUE: u8 = 0x10;
+pub const EFI_BACKGROUND_GREEN: u8 = 0x20;
+pub const EFI_BACKGROUND_CYAN: u8 = 0x30;
+pub const EFI_BACKGROUND_RED: u8 = 0x40;
+pub const EFI_BACKGROUND_MAGENTA: u8 = 0x50;
+pub const EFI_BACKGROUND_BROWN: u8 = 0x60;
+pub const EFI_BACKGROUND_LIGHTGRAY: u8 = 0x70;
